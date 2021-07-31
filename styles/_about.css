@@ -1,0 +1,79 @@
+
+
+/* Float four columns side by side */
+#about .about-content,
+#about img {
+  float: left;
+  width: 50%;
+  padding: 0 2rem;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+#about .main {
+  margin: 0 auto;
+}
+
+/* Clear floats after the columns */
+#about .main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#about img {
+  height: auto;
+}
+
+#about h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--theme-dark-lite);
+  margin-bottom: 2rem;
+}
+
+#about h5 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--theme-dark-lite);
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+#about h5 span {
+  color: var(--theme-color);
+}
+
+#about p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+  color: var(--theme-dark-lite);
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+
+  #about .about-content {
+    width: 100%;
+  }
+
+  #about img {
+    width: 100%;
+    display: block;
+  }
+
+  #about .img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  #about .about-content,
+  #about img {
+    display: block;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+  }
+}
