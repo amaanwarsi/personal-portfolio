@@ -59,7 +59,9 @@ const fetchPosts = async () => {
   let post = [];
   post = ApiResponse.data.user.publication.posts;
   ApiResponse.data.user.publication.posts.map(function(post, index){
-    $('.row').append('<a href="https://aw-techy.hashnode.dev/'+post.slug+'" id="'+index+'"><div class="card"><div class="card-img"> <img src="'+post.coverImage+'" alt="'+post.title+'" loading="lazy" /> </div> <div class="cardText"> <h2>'+post.title+'</h2> <p>'+post.brief+'</p> </div></div></a>');
+    var url = `https://aw-techy.hashnode.dev/${post.slug}`;
+    console.log(url);
+    $('.row').append('<div class="card" id="'+index+'" onclick="window.location=`'+url+'`"><div class="card-img"> <img src="'+post.coverImage+'" alt="'+post.title+'" loading="lazy" /> </div> <div class="cardText"><h2>'+post.title+'</h2> <p>'+post.brief+'</p> </div></div>');
   });
 }
 
