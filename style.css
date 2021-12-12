@@ -35,9 +35,13 @@ html {
 
 body {
   font-size: 1.6rem;
-  height: 100%;
-  width: 100%;
+
+
 }
+
+html, body{min-height:100%;}
+
+body{height:100vh;}
 
 ::selection {
   color: #fff;
