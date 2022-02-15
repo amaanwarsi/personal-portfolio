@@ -33,16 +33,14 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-size: 1.6rem;
+  height:100vh;
 }
 
 html, body{
-  margin: 0;
-  height:100%;
-  width:100%;
-  padding:0;
-  background: red;
+  min-height:100%;
 }
 
 ::selection {
