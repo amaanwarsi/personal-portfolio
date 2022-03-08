@@ -199,6 +199,7 @@
   <script src="particles.min.js"></script>
   <script crossorigin src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script>
+/*
     $('#errorMsg').hide();
 
 
@@ -246,7 +247,7 @@
   `;
 
 
-    /*
+    
 
     const fetchPosts = async () => {
       const response = await fetch('https://api.hashnode.com', {
@@ -269,7 +270,7 @@
     }
 
     fetchPosts();
-    */
+    
 
     var app = document.getElementById('typingarea');
 
@@ -292,6 +293,9 @@
     $(".particle-class").each(function() {
     particlesJS($(this).attr('id'), { "particles": { "number": { "value": 160, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 } }, "opacity": { "value": 1, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 4, "size_min": 0.3, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 600 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "bubble" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 250, "size": 0, "duration": 2, "opacity": 0, "speed": 3 }, "repulse": { "distance": 400, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
     });
+
+*/
+function handleFormSubmit(){var e=encodeURIComponent($("#subject").val()),n=encodeURIComponent($("#body").val());""!=e&&""!=n?($("#errorMsg").hide(),window.open("mailto:itsamaan.warsi@gmail.com?subject="+e+"&body="+n,"_blank")):$("#errorMsg").show()}$("#errorMsg").hide(),$(".menu-toggle").click(function(){$(".nav").toggleClass("mobile-nav"),$(this).toggleClass("is-active"),$(".logo").toggleClass("dark")}),$(document).on("click",".nav-item a",function(e){$(".menu-toggle").click(),location.href=this.href});const query='\n    {\n      user(username: "amaanwarsi") {\n        publication {\n          posts{\n            slug\n            title\n            brief\n            coverImage\n          }\n        }\n      }\n    }\n  ';var app=document.getElementById("typingarea"),typewriter=new Typewriter(app,{loop:!0,delay:75});typewriter.pauseFor(1500).typeString("I'm a Web Developer").pauseFor(1e3).deleteAll().typeString("I'm a Freelancer").pauseFor(1e3).start(),$(".particle-class").each(function(){particlesJS($(this).attr("id"),{particles:{number:{value:160,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5}},opacity:{value:1,random:!0,anim:{enable:!0,speed:1,opacity_min:0,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:4,size_min:.3,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:1,direction:"none",random:!0,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:600}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"bubble"},onclick:{enable:!0,mode:"repulse"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:250,size:0,duration:2,opacity:0,speed:3},repulse:{distance:400,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!0})});
   </script>
 </body>
 
