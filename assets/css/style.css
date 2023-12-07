@@ -141,6 +141,10 @@ body {
     color: #f8f9fa;
 }
 
+.form-control:focus {
+    border: 2.5px solid #ffc107;
+    box-shadow: none;
+}
 @media screen and (max-width: 992px) {
     .navbar-nav {
         margin-top: 2rem;
