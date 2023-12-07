@@ -1,5 +1,6 @@
 # personal-portfolio website
-ready to use personal portfolio website for anyone 
-> Quick customization
-> Contributions are welcome
+Ready to use personal portfolio website for anyone 
+1.  Quick customization
+2.  Built with Bootstraps 5
+3.  Contributions are welcome
 See demo https://amaanwarsi.thedev.id/teacher-portfolio/
